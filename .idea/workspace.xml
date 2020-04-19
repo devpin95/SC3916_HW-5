@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f35cd662-f52b-4583-bd99-7e510a0cf6d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movieActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movieActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       <workItem from="1554777798054" duration="1512000" />
       <workItem from="1554867124264" duration="747000" />
       <workItem from="1587260835829" duration="3893000" />
-      <workItem from="1587264856607" duration="12761000" />
+      <workItem from="1587264856607" duration="13944000" />
     </task>
     <task id="LOCAL-00001" summary="lab1">
       <created>1522979821528</created>

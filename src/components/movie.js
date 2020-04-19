@@ -79,7 +79,7 @@ class Movie extends Component {
                     <ListGroup>
                         <ListGroupItem>{currentMovie.title}</ListGroupItem>
                         <ListGroupItem><ActorInfo actors={currentMovie.actors} /></ListGroupItem>
-                        <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avg_rating} </h4></ListGroupItem>
+                        <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avg_rating.toFixed(2)} </h4></ListGroupItem>
                     </ListGroup>
                     <Panel.Heading>Reviews</Panel.Heading>
                     <Panel.Body>
