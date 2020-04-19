@@ -12,14 +12,14 @@ class Movie extends Component {
     componentDidMount() {
         const {dispatch} = this.props;
         if (this.props.selectedMovie == null)
-            dispatch(fetchMovie(this.props.movieId));
+            dispatch(fetchMovie(this.props.movieTitle));
     }
 
     render() {
         const ActorInfo = ({actors}) => {
             return actors.map((actor, i) =>
                 <p key={i}>
-                    <b>{actor.actorName}</b> {actor.characterName}
+                    <b>{actor.name}</b> {actor.character}
                 </p>
             );
         };
@@ -31,7 +31,7 @@ class Movie extends Component {
                     <Glyphicon glyph={'star'} /> {review.rating}
                 </p>
             );
-        }
+        };
 
         const DetailInfo = ({currentMovie}) => {
             if (!currentMovie) { // evaluates to true if currentMovie is null
@@ -40,13 +40,13 @@ class Movie extends Component {
             return (
                 <Panel>
                     <Panel.Heading>Movie Detail</Panel.Heading>
-                    <Panel.Body><Image className="image" src={currentMovie.imageUrl} thumbnail /></Panel.Body>
+                    <Panel.Body><Image className="image" src={currentMovie.image} thumbnail /></Panel.Body>
                     <ListGroup>
                         <ListGroupItem>{currentMovie.title}</ListGroupItem>
                         <ListGroupItem><ActorInfo actors={currentMovie.actors} /></ListGroupItem>
-                        <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>
+                        <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avg_rating} </h4></ListGroupItem>
                     </ListGroup>
-                    <Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>
+                    <Panel.Body><ReviewInfo reviews={currentMovie.movie_reviews} /></Panel.Body>
                 </Panel>
             );
         };
@@ -60,7 +60,7 @@ const mapStateToProps = (state, ownProps) => {
     console.log(ownProps);
     return {
         selectedMovie: state.movie.selectedMovie,
-        movieId: ownProps.match.params.movieId
+        movieTitle: ownProps.match.params.movieTitle
     }
 }
 

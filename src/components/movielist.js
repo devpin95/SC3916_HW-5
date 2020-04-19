@@ -42,13 +42,13 @@ class MovieList extends Component {
                     {movieList.map((movie) =>
                     <Carousel.Item key={movie._id}>
                         <div>
-                            <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>
-                                <Image className="image" src={movie.imageUrl} thumbnail />
+                            <LinkContainer to={'/movie/'+movie.title} onClick={()=>this.handleClick(movie)}>
+                                <Image className="imageThumb" src={movie.image} thumbnail />
                             </LinkContainer>
                         </div>
                         <Carousel.Caption>
                             <h3>{movie.title}</h3>
-                            <Glyphicon glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.releaseDate}
+                            <Glyphicon glyph={'star'} /> {movie.avg_rating} &nbsp;&nbsp; {movie.releasedate}
                         </Carousel.Caption>
                     </Carousel.Item>)}
             </Carousel>);

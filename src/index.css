@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.imageThumb {
+  width: 15%;
+  height: auto;
+}
+
+carousel slide {
+  background-color: #111;
+}
