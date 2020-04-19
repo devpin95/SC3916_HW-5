@@ -12,3 +12,44 @@ body {
 carousel slide {
   background-color: #111;
 }
+
+panel-body img {
+  width: 100%;
+}
+
+.review {
+  margin: 0 auto;
+  max-width: 500px;
+  margin-bottom: 20px;
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+}
+.review:first-child {
+  border-top: 1px solid #f00;
+}
+
+textarea {
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 100px;
+}
+form{
+  height: 150px;
+}
+.form-group {
+  max-width: 500px;
+  margin: 5px auto;
+}
+.form-group div {
+  margin-top: 10px;
+}
+input[type="button"] {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+input.form-control {
+  max-width: 500px;
+}
+button {
+  float: right;
+}
